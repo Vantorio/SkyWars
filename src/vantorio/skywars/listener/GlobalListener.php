@@ -7,7 +7,9 @@ namespace vantorio\skywars\listener;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerQuitEvent;
+use pocketmine\Server;
 use vantorio\skywars\session\SessionFactory;
+use vantorio\skywars\SkyWars;
 
 final class GlobalListener implements Listener
 {

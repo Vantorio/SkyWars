@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace vantorio\skywars\session;
 
+use pocketmine\player\Player;
 use pocketmine\utils\SingletonTrait;
 
 class SessionFactory
