@@ -7,7 +7,7 @@ namespace vantorio\skywars\session;
 use pocketmine\player\Player;
 use pocketmine\utils\SingletonTrait;
 
-class SessionFactory
+class SessionCollection
 {
     use SingletonTrait;
 

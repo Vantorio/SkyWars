@@ -8,7 +8,7 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\Server;
-use vantorio\skywars\session\SessionFactory;
+use vantorio\skywars\session\SessionCollection;
 use vantorio\skywars\SkyWars;
 
 final class GlobalListener implements Listener
@@ -25,7 +25,7 @@ final class GlobalListener implements Listener
     public function onPlayerJoin(PlayerJoinEvent $event): void
     {
         $player = $event->getPlayer();
-        $session = SessionFactory::getInstance()->add($player);
+        $session = SessionCollection::getInstance()->add($player);
 
         if (is_null($session)) {
             return;
@@ -37,6 +37,9 @@ final class GlobalListener implements Listener
     public function onPlayerQuit(PlayerQuitEvent $event): void
     {
         $player = $event->getPlayer();
-        SessionFactory::getInstance()->remove($player);
+
+        // TODO: before leave save player data
+
+        SessionCollection::getInstance()->remove($player);
     }
 }
