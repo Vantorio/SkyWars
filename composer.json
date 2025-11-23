@@ -1,0 +1,20 @@
+{
+  "name": "vantorio/skywars",
+  "description": "SkyWars plugin for PocketMine-MP",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "pocketmine/pocketmine-mp": "^5"
+  },
+  "autoload": {
+    "psr-4": {
+      "vantorio\\skywars\\": "src/"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "8.1.0"
+    },
+    "sort-packages": true
+  }
+}

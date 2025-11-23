@@ -1,0 +1,8 @@
+name: SkyWars
+main: vantorio\skywars\SkyWars
+version: 1.0.0
+api: 5.0.0
+author: Vantorio
+license: MIT
+website: https://github.com/Vantorio/SkyWars
+description: A SkyWars plugin for PocketMine-MP.
